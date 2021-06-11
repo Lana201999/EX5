@@ -3,7 +3,9 @@
 }
 
 header {
-  background-color: #211a1d;
+  display: flex;
+  justify-content: center;
+   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
   padding: 20px;
@@ -12,8 +14,11 @@ header {
   border-style: hidden;
 }
 nav {
-  display: inline-block;
-  width: 100%;
+  display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 header ul {
@@ -111,11 +116,15 @@ p {
   text-align: center;
   font-size: 125%;
 }
-
-.image-container img {
-  
-  vertical-align: top;
-  border: 5px  solid  #9a9da3;
+.bears{
+  display: flex;
+  flex-direction: column;
+}
+.bears div  {
+  display: flex;
+  justify-content: space-evenly;
+margin: 5px;
+ 
 }
 img:nth-child(1){
   border-color: rgb(22, 7, 109);
@@ -150,10 +159,18 @@ img:nth-child(3){
 .news h2{
   text-align: center;
 }
+.news div{
+  display: flex;
+  
+  justify-content: space-evenly;
+}
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  padding: 10px;
+  padding: 30px;
   margin: 20px;
   width: 25%;
   border: 1px solid black;
@@ -224,6 +241,12 @@ img:nth-child(3){
 }
 /*Programs*/
 
+.programs div {
+  display: flex;
+  justify-content: center;
+}
 .programs .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
